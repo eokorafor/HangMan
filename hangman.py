@@ -9,7 +9,40 @@ import random as rand
 #Make a tkinter gui
 #Scrape a dictionary
 
-words = ["hello", "dinner", "character", "fantastic", "computer"]
+words = [
+    'people',
+    'history',
+    'way',
+    'art',
+    'world',
+    'information',
+    'map',
+    'two',
+    'family',
+    'government',
+    'health',
+    'system',
+    'computer',
+    'meat',
+    'year',
+    'thanks',
+    'music',
+    'person',
+    'reading',
+    'method',
+    'data',
+    'food',
+    'understanding',
+    'theory',
+    'law',
+    'bird',
+    'literature',
+    'problem',
+    'software',
+    'control',
+    'knowledge',
+    'power'
+    ]
 
 def intro():
 	print("Welcome to Hangman! Try to guess the word!\n\n")
@@ -35,6 +68,7 @@ def play():
 
 	while(incorrect < len(selected_word)):
 		char = input()
+		#add hist option
 		if(char in chosen_words):
 			print('Word already chosen')
 		elif(char in selected_word):
